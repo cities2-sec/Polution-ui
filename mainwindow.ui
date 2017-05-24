@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>377</width>
-    <height>449</height>
+    <width>398</width>
+    <height>466</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,16 +17,19 @@
    <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>21</x>
       <y>0</y>
-      <width>341</width>
-      <height>371</height>
+      <width>371</width>
+      <height>391</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout_2">
+    <layout class="QVBoxLayout" name="verticalLayout_4">
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
+      <widget class="QSplitter" name="splitter">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QWidget" name="">
         <layout class="QVBoxLayout" name="verticalLayout">
          <item>
           <widget class="QLabel" name="label">
@@ -39,37 +42,37 @@
           <widget class="QComboBox" name="comboBox">
            <item>
             <property name="text">
-             <string>Dilluns</string>
+             <string>Monday</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Dimarts</string>
+             <string>Tuesday</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Dimecres</string>
+             <string>Wednesday</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Dijous</string>
+             <string>Thursday</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Divendres</string>
+             <string>Friday</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Dissabte</string>
+             <string>Saturday</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Diumenge</string>
+             <string>Sunday</string>
             </property>
            </item>
           </widget>
@@ -128,19 +131,48 @@
           </widget>
          </item>
         </layout>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(0, 170, 0);
+       </widget>
+       <widget class="QWidget" name="">
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>Ruta del executable JAR</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QPlainTextEdit" name="executableTextEdit"/>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolButton">
+               <property name="text">
+                <string>...</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 170, 0);
 color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string>Envia</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+           </property>
+           <property name="text">
+            <string>Envia</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
      </item>
      <item>
       <widget class="QTextBrowser" name="textBrowser"/>
@@ -153,7 +185,7 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>377</width>
+     <width>398</width>
      <height>30</height>
     </rect>
    </property>
