@@ -6,178 +6,235 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>398</width>
-    <height>466</height>
+    <width>472</width>
+    <height>595</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Predictor de pol·lució</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QWidget" name="">
+   <widget class="QSplitter" name="splitter_3">
     <property name="geometry">
      <rect>
-      <x>21</x>
+      <x>10</x>
       <y>0</y>
-      <width>371</width>
-      <height>391</height>
+      <width>451</width>
+      <height>521</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout_4">
-     <item>
-      <widget class="QSplitter" name="splitter">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <widget class="QSplitter" name="splitter_2">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QWidget" name="">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Selecciona dia de la setmana</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox">
+         <item>
+          <property name="text">
+           <string>Monday</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Tuesday</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Wednesday</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Thursday</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Friday</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Saturday</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Sunday</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Entra contaminació de NO2</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_CO2"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Entra contaminació de PM10</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_NO2"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Entra temperatura en ºC</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Temp"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Punt de mesura</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_2">
+         <item>
+          <property name="text">
+           <string>Palau Reial</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Torrent Gornal</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Sants</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Ruta del executable JAR</string>
        </property>
-       <widget class="QWidget" name="">
-        <layout class="QVBoxLayout" name="verticalLayout">
-         <item>
-          <widget class="QLabel" name="label">
-           <property name="text">
-            <string>Selecciona dia de la setmana</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QComboBox" name="comboBox">
-           <item>
-            <property name="text">
-             <string>Monday</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>Tuesday</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>Wednesday</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>Thursday</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>Friday</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>Saturday</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>Sunday</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_2">
-           <property name="text">
-            <string>Entra contaminació de CO2</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QDoubleSpinBox" name="doubleSpinBox_CO2"/>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_3">
-           <property name="text">
-            <string>Entra contaminació de NO2</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QDoubleSpinBox" name="doubleSpinBox_NO2"/>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_5">
-           <property name="text">
-            <string>Punt de mesura</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QComboBox" name="comboBox_2">
-           <item>
-            <property name="text">
-             <string>Palau Reial</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>Dimarts</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>Sants</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_4">
-           <property name="text">
-            <string>Resultats</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QWidget" name="">
-        <layout class="QVBoxLayout" name="verticalLayout_3">
-         <item>
-          <layout class="QVBoxLayout" name="verticalLayout_2">
-           <item>
-            <widget class="QLabel" name="label_6">
-             <property name="text">
-              <string>Ruta del executable JAR</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout">
-             <item>
-              <widget class="QPlainTextEdit" name="executableTextEdit"/>
-             </item>
-             <item>
-              <widget class="QToolButton" name="toolButton">
-               <property name="text">
-                <string>...</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(0, 170, 0);
-color: rgb(255, 255, 255);</string>
-           </property>
-           <property name="text">
-            <string>Envia</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
       </widget>
-     </item>
-     <item>
-      <widget class="QTextBrowser" name="textBrowser"/>
-     </item>
-    </layout>
+      <widget class="QWidget" name="">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPlainTextEdit" name="executableTextEdit"/>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>Ruta de les dades del model</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPlainTextEdit" name="modelTextEdit"/>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_2">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>Ruta de les dades arff</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QPlainTextEdit" name="dataTextEdit"/>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_3">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 170, 0);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Envia</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Resultats</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextBrowser" name="textBrowser">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>150</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -185,7 +242,7 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>398</width>
+     <width>472</width>
      <height>30</height>
     </rect>
    </property>

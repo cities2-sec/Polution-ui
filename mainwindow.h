@@ -20,9 +20,13 @@ public:
 private slots:
     void on_pushButton_clicked();
     void obrir_about();
-    QString sendData (QString day, double co2, double no2, QString location);
+    QString sendData (QString day, double no2, double pm10, double temp, QString location);
 
     void on_toolButton_clicked();
+
+    void on_toolButton_2_clicked();
+
+    void on_toolButton_3_clicked();
 
 private:
     Ui::MainWindow *ui;
